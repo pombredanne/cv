@@ -1,0 +1,113 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+% possible options include:
+% font size
+% ('10pt', '11pt', '12pt')
+% paper size
+% ('a4paper', 'letterpaper', 'a5paper',
+% 'legalpaper', 'executivepaper', 'landscape')
+% font family
+% ('sans' and 'roman')
+\documentclass[11pt,a4paper,roman]{moderncv}
+
+% moderncv themes
+% style options
+% 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}
+% color options:
+% 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}
+% to set the default font, use '\sfdefault' for the default sans serif font,
+% '\rmdefault' for the default roman one, or any tex font name
+%\renewcommand{\familydefault}{\sfdefault}
+% uncomment to suppress automatic page numbering for CVs longer than one page
+%\nopagenumbers{}
+
+% character encoding
+\usepackage{fontspec}
+\setmainfont{LinLibertine}[
+  UprightFont = LinLibertine_R,
+  BoldFont = LinLibertine_RZ,
+  ItalicFont = LinLibertine_RI,
+  BoldItalicFont = LinLibertine_RZI
+]
+\setmonofont{LinLibertine_M}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}
+
+% For the 'classic' style
+% If you want to force the width allocated to your name and avoid line breaks.
+% Be careful though, the length is normally calculated to avoid any overlap
+% with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+% personal data
+\name{Александр}{Лисяной}
+%\title{Resumé title}
+% the "postcode city" and "country" arguments can be omitted or provided empty
+%\address{street and number}{postcode city}{country}
+\phone[mobile]{+7~(916)~822~6977} % possible types: mobile, fixed or fax
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{all3fox@gmail.com}
+%\homepage{www.johndoe.com}
+%\social[linkedin]{}
+%\social[twitter]{jdoe}
+\social[github]{all3fox}
+\extrainfo{08.07.1993 (21 год), Москва}
+% '64pt' is the height the picture must be resized to,
+% 0.4pt is the thickness of the frame around it (0pt for no frame),
+% 'picture' is the name of the picture file
+%\photo[64pt][0.4pt]{picture}
+\quote{Резюме составлено \today}
+
+%% to enalbe colored links
+%% \AtBeginDocument{
+%%     \hypersetup{colorlinks,urlcolor=cyan}
+%% }
+
+\begin{document}
+\makecvtitle
+
+\section{Образование}
+%\cventry{year--year}{Degree}{Institution}{City}
+%        {\textit{Grade}}{Description}
+\cventry{2011--2015}{Прикладная математика и информатика}
+        {\href{http://cs.msu.ru/}{ВМК МГУ}}{Москва}
+        {Бакалавр}
+        {}
+% no english version of the website
+\cventry{2008--2010}{Математика и экономика}
+        {\href{http://liceum1535.ru/}{Лицей 1535}}
+        {Москва}
+        {}{}
+
+\section{Опыт работы}
+\cventry{2014--2014}{R\&D intern}{NDM Systems}{Москва}
+        {}{Обработка и классификация интернет трафика.}
+
+\section{Знание языков}
+\cvitemwithcomment{Английский}{свободное владение}
+  {Экзамены:
+    \href{https://ru.wikipedia.org/wiki/Certificate_in_Advanced_English}{CAE}~(grade~A),
+    \href{https://ru.wikipedia.org/wiki/TOEFL}{TOEFL~iBT}~(118~из~120)
+  }
+\cvitemwithcomment{Немецкий}{базовое владение}{}
+\cvitemwithcomment{Русский}{родной язык}{}
+
+\end{document}
+%% end of file `template.tex'.
