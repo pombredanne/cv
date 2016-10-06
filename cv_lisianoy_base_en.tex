@@ -58,21 +58,21 @@
 %\phone[fax]{+3~(456)~789~012}
 \email{all3fox@gmail.com}
 %\homepage{www.johndoe.com}
-%\social[linkedin]{in/alexander-lisyanoy-0468b934}
-\social[twitter]{all3fox}
+\social[linkedin]{all3fox}
+%\social[twitter]{}
 \social[github]{all3fox}
 \extrainfo{08.07.1993 (23 y/o)}
 % '64pt' is the height the picture must be resized to,
 % 0.4pt is the thickness of the frame around it (0pt for no frame),
 % 'picture' is the name of the picture file
-\quote{Résumé composed \today}
+%\quote{Résumé composed \today}
 
 %% to enalbe colored links
 %% \AtBeginDocument{
 %%     \hypersetup{colorlinks,urlcolor=cyan}
 %% }
 
-\photo[100pt][0.4pt]{picture}
+%\photo[100pt][0.4pt]{picture}
 \begin{document}
 \makecvtitle
 
@@ -80,24 +80,30 @@
 %\cventry{year--year}{Degree}{Institution}{City}
 %        {\textit{Grade}}{Description}
 \cventry{2015--2017}
-        {\href{http://www.informatik.tuwien.ac.at/english}{Faculty of Informatics}}
+        {Faculty of Informatics}
         {Vienna University of Technology}
-        {Vienna}
-        {Bachelor of Software and Information Engineering, ongoing}
-        {}
+        {}{}
+        {Bachelor of Software and Information Engineering, ongoing.}
 \cventry{2011--2015}
-        {\href{http://en.cs.msu.ru/}{Faculty of Computational Mathematics and Cybernetics}}
-        {Lomonosov Moscow State University}{Moscow}
-        {Bachelor of Applied Mathematics and Computer Science}
-        {}
+        {Faculty of Computational Mathematics}
+        {Lomonosov Moscow State University}
+        {}{}
+        {Bachelor of Applied Mathematics and Computer Science, graduated.}
 \section{Experience}
-\cventry{2016}{\href{https://summerofcode.withgoogle.com/dashboard/project/5302065626611712/overview/}{Google Summer of Code}}
-        {Organisation: jQuery, Inc}{}
-        {}{Worked on the \texttt{\href{https://github.com/jzaefferer/commitplease/}{commitplease}} subproject. Added support for Angular.js commit message style, added integration with \texttt{\href{https://github.com/brigade/overcommit}{overcommit}} and \texttt{\href{https://github.com/typicode/husky}{husky}}. The npm module is \href{https://www.npmjs.com/package/commitplease}{downloaded 11k/month}. (node.js/git/ruby)}
+\cventry{2016}{Google Summer of Code}
+        {Organization: jQuery, Inc}{}
+        {}{Worked on the \href{https://github.com/jzaefferer/commitplease/}{commitplease} subproject. Added support for AngularJS commit message style, as well as \href{https://github.com/brigade/overcommit}{overcommit} and \href{https://github.com/typicode/husky}{husky} projects. The npm module is \href{https://www.npmjs.com/package/commitplease}{downloaded 11k/month}. (node.js/git internals)}
 \cventry{2014--2015}{R\&D intern}
-        {\href{http://www.ndmsystems.com}{NDM Systems, Inc}}{}
-        {}{Developed a scraping system that mimics user activity and gathers video flows from the web. Extracted features from video flows and improved QoS of network devices. (python/selenium/postgresql/PCA/SVM)}
+        {NDM Systems, Inc}
+        {}{}
+        {Developed a scraping system that mimics user activity and gathers video flows from the web. Extracted features from video flows, studied their impact on video recognition and used the results to help consumer network devices better prioritize internet traffic. \\ (Python/scikit-learn/Selenium/PostgreSQL)}
 
+\section{Selected Coursework}
+\cventry{2016}{GINP: Graphic Image Node Processor}
+        {}{}{}{A desktop image processing application that treats images and image operations as nodes of a directed acyclic graph. Development in a small team, my main input are graph traversal algorithms that check graph structure, process images and cache image operation results. \\ (Java 8/JavaFX/Spring/JUnit/Maven/git)}
+
+\cventry{2014}{3D Model of the Solar System}
+        {}{}{}{Experienced a variety of 3D image rendering techniques. Enjoyed coding the basic algorithms: Kepler's and Newton's laws of motion, Gourard and Phong shading models, etc. \\ (C++11/OpenGL/Boost.Test/CMake/git)}
 \section{Languages \small{(based on ILR scale)}}
 \cvitemwithcomment{Russian}{Native or bilingual proficiency}{}
 \cvitemwithcomment{English}{Full professional proficiency}
@@ -114,11 +120,11 @@
 \cventry{3--11--2012}{SAT Mathematics II}{800/800}{}{}{}
 \cventry{6--10--2012}{SAT Physics}{800/800}{}{}{}
 
-\section{Vocational}
-\cventry{2014--2015}
-        {\href{https://www.coursera.org/course/algs4partI}{Algorithms Part I} and \href{https://www.coursera.org/course/algs4partII}{Algorithms Part II}}
-        {Coursera}
-        {(Java/Algorithms)}{}{}
+%% \section{Vocational}
+%% \cventry{2014--2015}
+%%         {\href{https://www.coursera.org/course/algs4partI}{Algorithms Part I} and \href{https://www.coursera.org/course/algs4partII}{Algorithms Part II}}
+%%         {Coursera}
+%%         {(java)}{}{}
 %% \cventry{2012}{Sprache -- Kultur -- Literatur}
 %%         {\href{http://treffpunktsprachen.uni-graz.at/en/}
 %%           {Summer course at University of Graz}}
