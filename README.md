@@ -1,4 +1,3 @@
-cv
-==
+# Curriculum Vitae and Resume
 
-curriculum vitae and resume
+To build, run `lualatex cv_lisianoi_base_en.tex`
